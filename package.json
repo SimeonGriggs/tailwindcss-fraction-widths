@@ -1,6 +1,6 @@
 {
   "name": "tailwindcss-fraction-widths",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Helper for generating fraction classes given a number of columns",
   "repository": {
     "type": "git",
