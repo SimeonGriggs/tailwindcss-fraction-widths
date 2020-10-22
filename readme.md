@@ -10,10 +10,10 @@ Then update your `tailwind.config.js` to use the plugin, passing in your desired
 
 ```js
 // tailwind.config.js
-const fractionWidths = require("./index");
+const fractionWidths = require("tailwindcss-fraction-widths");
 
 module.exports = {
-  // ... all other settings
+  // ... all other config
   plugins: [
     // Will add .w-1/16, .w-2/16, etc
     fractionWidths(16),
@@ -24,4 +24,5 @@ module.exports = {
 };
 ```
 
+- [Demo on Tailwind CSS Play](https://play.tailwindcss.com/A1QwTxtgQC?file=config)
 - By [Simeon Griggs](https://simeongriggs.dev/)
