@@ -1,4 +1,4 @@
-const plugin = require('tailwindcss/plugin')
+import plugin from 'tailwindcss/plugin'
 
 /**
  * Returns tailwind-formatted grid widths
@@ -8,8 +8,8 @@ const plugin = require('tailwindcss/plugin')
  * Or use an array!
  * Example: gridWidths([2,7,16])
  */
-const fractionWidths = (cols) =>
-  plugin(function ({ addUtilities, e }) {
+export const fractionWidths = (cols) =>
+  plugin(({ addUtilities, e }) => {
     let columnSets = []
 
     if (Number.isInteger(cols)) {
@@ -46,4 +46,4 @@ const fractionWidths = (cols) =>
     addUtilities(colsObj, ['responsive'])
   })
 
-module.exports = fractionWidths
+
