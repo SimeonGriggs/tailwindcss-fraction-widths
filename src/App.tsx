@@ -1,13 +1,19 @@
-import React, { useState } from 'react'
+import React from 'react'
+
+type Cols = {
+  one: JSX.Element
+  two: JSX.Element
+  three: JSX.Element
+}
 
 function App() {
-  const cols = {
+  const cols: Cols = {
     one: <ColOne />,
     two: <ColTwo />,
     three: <ColThree />,
   }
 
-  const colsDisplay = ['one', 'two', 'one', 'two', 'one', 'three']
+  const colsDisplay: (keyof Cols)[] = ['one', 'two', 'one', 'two', 'one', 'three']
 
   return (
     <div className="flex font-black text-2xl h-screen">

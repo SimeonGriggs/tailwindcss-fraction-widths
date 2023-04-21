@@ -1,6 +1,6 @@
 {
   "name": "tailwindcss-fraction-widths",
-  "version": "0.0.3",
+  "version": "1.0.0",
   "description": "Helper for generating fraction classes given a number of columns",
   "repository": {
     "type": "git",
@@ -16,53 +16,33 @@
     "tailwindcss",
     "tailwindcss-plugin"
   ],
-  "scripts": {
-    "dev": "vite",
-    "lint": "eslint .",
-    "lint:fix": "eslint . --fix"
-  },
   "license": "MIT",
   "author": "Simeon Griggs <simeon@hey.com>",
   "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview"
+  },
   "dependencies": {
-    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.0.1"
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "autoprefixer": "^9.8.6",
-    "postcss": "^7.0.35",
-    "@pika/react": "^16.13.1",
-    "@pika/react-dom": "^16.13.1",
-    "babel-eslint": "^10.1.0",
-    "eslint": "^7.14.0",
-    "eslint-config-airbnb": "^18.2.0",
-    "eslint-config-prettier": "^6.15.0",
-    "eslint-config-wesbos": "^1.0.1",
-    "eslint-plugin-html": "^6.1.1",
-    "eslint-plugin-import": "^2.22.1",
-    "eslint-plugin-jsx-a11y": "^6.4.1",
-    "eslint-plugin-prettier": "^3.1.4",
-    "eslint-plugin-react": "^7.21.5",
-    "eslint-plugin-react-hooks": "^4.2.0",
-    "prettier": "^2.2.0",
-    "react": "^17.0.1",
-    "vite": "^1.0.0-rc.1",
-    "vite-plugin-react": "^3.0.0"
-  },
-  "eslintConfig": {
-    "extends": [
-      "wesbos"
-    ],
-    "rules": {
-      "no-console": 2,
-      "prettier/prettier": [
-        "error",
-        {
-          "trailingComma": "es5",
-          "singleQuote": true,
-          "printWidth": 80,
-          "semi": false
-        }
-      ]
-    }
+    "@types/react": "^18.0.28",
+    "@types/react-dom": "^18.0.11",
+    "@typescript-eslint/eslint-plugin": "^5.57.1",
+    "@typescript-eslint/parser": "^5.57.1",
+    "@vitejs/plugin-react": "^4.0.0-beta.0",
+    "autoprefixer": "^10.4.14",
+    "eslint": "^8.38.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.3.4",
+    "postcss": "^8.4.23",
+    "tailwindcss": "^3.3.1",
+    "typescript": "^5.0.2",
+    "vite": "^4.3.0"
   }
 }
