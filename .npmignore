@@ -1,0 +1,8 @@
+!dist
+index.html
+postcss.config.js
+public
+src
+tailwind.config.js
+vite
+vite.config.ts
