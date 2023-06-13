@@ -24,5 +24,5 @@ module.exports = {
 };
 ```
 
-- [Demo on Tailwind CSS Play](https://play.tailwindcss.com/A1QwTxtgQC?file=config)
+- [Demo on Tailwind CSS Play](https://play.tailwindcss.com/eXB6XuH5W2?file=config)
 - By [Simeon Griggs](https://simeongriggs.dev/)

@@ -25,7 +25,7 @@
   "description": "Helper for generating fraction classes given a number of columns",
   "repository": {
     "type": "git",
-    "url": "https://github.com/SimeonGriggs/tailwindcss-fraciton-widths"
+    "url": "https://github.com/SimeonGriggs/tailwindcss-fraction-widths"
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
