@@ -10,7 +10,7 @@ Then update your `tailwind.config.js` to use the plugin, passing in your desired
 
 ```js
 // tailwind.config.js
-const fractionWidths = require("tailwindcss-fraction-widths");
+const { fractionWidths } = require("tailwindcss-fraction-widths");
 
 module.exports = {
   // ... all other config
